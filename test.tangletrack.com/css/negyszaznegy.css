@@ -1,0 +1,45 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+}
+
+.luckiest-guy-regular {
+    margin: auto;
+    font-family: "Luckiest Guy", serif;
+    font-weight: 1600;
+    font-style: normal;
+    color: whitesmoke;
+  }
+  .luckiest-guy-regular h1 {
+    font-size: 100px; 
+    color: #FFD700; 
+    margin: 10px 0; 
+}
+
+.luckiest-guy-regular p {
+    font-size: 60px; 
+    color: #FFFFFF; 
+    margin: 10px 0;
+}
+.tartalom{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    padding: 20px; 
+}
+.kozepreigazit-img {
+        width: 150px; /* Kép méretének beállítása */
+        height: auto;
+        margin-bottom: 20px; /* Távolság a szövegtől */
+    }

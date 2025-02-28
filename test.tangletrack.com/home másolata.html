@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="icon" type="image/x-icon" href="./android-chrome-512x512.png">
+    <title>Tangle Track</title>
+    <style>
+
+      </style>
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="./home.html"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+           
+            <li><a href="./social.html"><b>Social</b></a></li>
+            <li><a href="./event.html"><b>Events</b></a></li>
+            <li><a href="#"><b>Shop</b></a></li>
+            <li><a href="#"><b>English</b></a></li>
+        </ul>
+        <ul >
+            <li class="nav-item"><a href="./home.html"><img src="hatternelkul.png" alt="" width="90" height="auto"></a>
+            </li>
+            <li class="hideOnMobile nav-item"><a href="./social.html"><b>Social</b></a>
+                </li>
+            <li class="hideOnMobile nav-item"><a href="./event.html"><b>Events</b></a>
+                
+                </li>
+            <li class="hideOnMobile nav-item"><a href="#"><b>Shop</b></a>
+                
+                </li>
+            <li class="hideOnMobile nav-item"><a href="#"><b>English</b></a>
+                
+                </li>
+            <li  class="menu-button" onclick="showSidebar()" ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+    
+    <header>
+        <div class="kozepreigazit">
+            <div class="logo">
+                <img src="./tangletracklogo.png" alt="Game Logo">
+            </div>
+            <p style="color:black;"><b>Wanna try it?</b></p>
+            <div class="download-buttons kozepregazit">
+                <a href="#"><img src="./4dfe840b9808fd9590bfcb159e7fc8d2.svg" alt="App Store"></a>
+                <a href="#"><img src="./787c3a0930060cd3cd921a0cdc4dd400.svg" alt="Google Play"></a>
+            </div>
+        </div>
+    </header>
+    <section id="news">
+        <div class="news-section">
+            <h1 class="tangletrack">Tangle Track</h1>
+            <hr class="kozep">
+            <h1>NEWS</h1>
+            <br>
+            <div class="news-grid">
+                <div class="news-item">
+                    <img src="./Logical Adventures.png" alt="Events">
+                    <p>Logical Adventures</p>
+                </div>
+                <div class="news-item">
+                    <img src="./campaign.png" alt="Campaign">
+                    <p>Campaign Mode</p>
+                </div>
+                <div class="news-item">
+                    <img src="./vau.png" alt="Friends">
+                    <p>1v1 Combat With Friends</p>
+                </div>
+                <div class="news-item">
+                    <img src="./inGameSegitsegek1.png" alt="Helpers">
+                    <p>Helpers And Obstructionists</p>
+                </div>
+                <div class="news-item">
+                    <img src="./vau.png" alt="Creative">
+                    <p>Create Your Own Challange</p>
+                </div>
+                <div class="news-item">
+                    <img src="./task.png" alt="Tutorial">
+                    <p>Watch And Learn</p>
+                </div>
+            </div>
+            <div class="see-more">
+                <a href="https://www.youtube.com/@TangleTrack" target="_blank">See more</a>
+            </div>
+        </div>
+    </section>
+    <section id="howtoplay">
+        <div class="howtoplay-section">
+            <h1 class="tangletrack">Tangle Track</h1>
+            <hr class="kozep">
+            <h1>HOW TO PLAY</h1>
+            
+        </div>
+    </section>
+    <section id="aboutgame">
+        <div class="aboutgame-section">
+        <h1 class="tangletrack">Tangle Track</h1>
+            <hr class="kozep">
+            <h1>ABOUT THE GAME</h1>
+            <br>
+        <div class="button-container">
+            <div class="tabs">
+                <button class="tab-button active btn" onclick="goToSlide(0)">Campaign</button>
+                <button class="tab-button btn" onclick="goToSlide(1)">Challenges</button>
+                <button class="tab-button btn" onclick="goToSlide(2)">Shop</button>
+                <button class="tab-button btn" onclick="goToSlide(3)">Leaderboard</button>
+                <button class="tab-button btn" onclick="goToSlide(4)">Friends</button>
+            </div>
+        </div>
+        <div class="carousel">
+          <button class="arrow left" onclick="prevSlide()">&#9664;</button>
+          <div class="image-container">
+            <div class="carousel-inner">
+                <img src="gameContents-en-03.png" alt="Slide 1">
+                <img src="gameContents-en-04.png" alt="Slide 2">
+                <img src="vau.png" alt="Slide 3">
+                <img src="vau.png" alt="Slide 4">
+                <img src="gameContents-en-05.png" alt="Slide 5">
+            </div>
+        </div>
+          <button class="arrow right" onclick="nextSlide()">&#9654;</button>
+        </div> 
+            <div class="pagination">
+                <span class="dot active" onclick="goToSlide(0)"></span>
+                <span class="dot" onclick="goToSlide(1)"></span>
+                <span class="dot" onclick="goToSlide(2)"></span>
+                <span class="dot" onclick="goToSlide(3)"></span>
+                <span class="dot" onclick="goToSlide(4)"></span>
+            </div>
+        </div>  
+
+    </section>
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="social-links">
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=61566264156754"><img src="./facebook_logo.avif" alt="Facebook"></a>
+                <a target="_blank" href="https://www.x.com/Tangle_Track"><img src="./twitter_logo.avif" alt="Twitter"></a>
+                <a target="_blank" href="https://www.youtube.com/@TangleTrack"><img src="./youtube_logo.png" alt="YouTube"></a>
+                <a target="_blank" href="https://www.instagram.com/tangletrack/"><img src="./insta_logo.jpg" alt="Instagram"></a>
+            </div>
+            <div class="footer-buttons">
+                <a href="#" target="_blank">Terms of Service</a>
+                <a href="#" target="_blank">Privacy Policy</a>
+                <a href="#" target="_blank">Help & Support</a>
+            </div>
+                <p>Hungary</p>
+                <p>Tel: +36 70-531-1887</p>
+                <p>Brainboost® © 2024 Devsisters Corp. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+</div>
+<script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+    }
+
+
+
+
+    let currentIndex = 0;
+function updateCarousel() {
+  const slides = document.querySelectorAll('.carousel-inner img');
+  const dots = document.querySelectorAll('.dot');
+  const tabs = document.querySelectorAll('.tab-button');
+
+  if (currentIndex >= slides.length) currentIndex = 0;
+  if (currentIndex < 0) currentIndex = slides.length - 1;
+
+  const offset = -currentIndex * 100;
+
+  slides.forEach(slide => {
+    slide.style.transform = `translateX(${offset}%)`;
+  });
+
+  // Update dot and tab highlights
+  dots.forEach(dot => dot.classList.remove('active'));
+  tabs.forEach(tab => tab.classList.remove('active'));
+  dots[currentIndex].classList.add('active');
+  tabs[currentIndex].classList.add('active');
+}
+
+function nextSlide() {
+  currentIndex++;
+  updateCarousel();
+}
+
+function prevSlide() {
+  currentIndex--;
+  updateCarousel();
+}
+
+function goToSlide(index) {
+  currentIndex = index;
+  updateCarousel();
+}
+
+// Initialize the first slide
+updateCarousel();
+
+</script>
+</body>
+</html>

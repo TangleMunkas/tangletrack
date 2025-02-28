@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kombinált Navbar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script>const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        </script>
+    <style>/* Alapstílusok */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        
+        /* Felső modern navbar */
+        .top-navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .top-navbar .logo a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        
+        .top-navbar .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .top-navbar .nav-links li {
+            margin: 0 15px;
+        }
+        
+        .top-navbar .nav-links li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+        
+        .top-navbar .nav-links li a:hover {
+            color: lightblue;
+        }
+        
+        .top-navbar .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        
+        .top-navbar .hamburger span {
+            background: white;
+            height: 3px;
+            width: 25px;
+            margin: 4px;
+        }
+        
+        /* Reszponzív design a felső navbarhoz */
+        @media screen and (max-width: 768px) {
+            .top-navbar .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: #333;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                padding: 10px 0;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+        
+            .top-navbar .nav-links.active {
+                display: flex;
+            }
+        
+            .top-navbar .nav-links li {
+                margin: 10px 0;
+            }
+        
+            .top-navbar .hamburger {
+                display: flex;
+            }
+        }
+        
+        /* Alsó mobilbarát navbar */
+        .bottom-navbar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 0;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+            border-top: 1px solid #ddd;
+        }
+        
+        .bottom-navbar .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            font-size: 14px;
+            width: 74px;
+        }
+        
+        .bottom-navbar .nav-item .icon {
+            font-size: 24px;
+            margin-bottom: 5px;
+            color: #555;
+            transition: color 0.3s;
+        }
+        
+        .bottom-navbar .nav-item span {
+            font-size: 12px;
+            color: #555;
+        }
+        
+        .bottom-navbar .nav-item:hover .icon,
+        .bottom-navbar .nav-item:hover span {
+            color: #007BFF; /* Hover szín */
+        }
+        
+        /* Reszponzív design az alsó navbarhoz */
+        @media screen and (max-width: 768px) {
+            .bottom-navbar .nav-item {
+                width: auto;
+            }
+        }
+        </style>
+    <!-- Felső modern navbar -->
+    <nav class="top-navbar">
+        <div class="logo"><a href="#">Tangle Track</a></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Tartalom helykitöltés -->
+    <section id="home" style="padding: 100px 20px; text-align: center;">
+        <h1>Welcome to Tangle Track</h1>
+        <p>Explore the website to learn more about us!</p>
+    </section>
+
+    <!-- Alsó navigációs sáv -->
+    <div class="bottom-navbar">
+        <div class="nav-item">
+            <i class="icon">🏠</i>
+            <span>Home</span>
+        </div>
+        <div class="nav-item">
+            <i class="icon">💬</i>
+            <span>Messages</span>
+        </div>
+        <div class="nav-item">
+            <i class="icon">🔍</i>
+            <span>Search</span>
+        </div>
+        <div class="nav-item">
+            <i class="icon">🕒</i>
+            <span>History</span>
+        </div>
+        <div class="nav-item">
+            <i class="icon">👤</i>
+            <span>Profile</span>
+        </div>
+    </div>
+</body>
+</html>

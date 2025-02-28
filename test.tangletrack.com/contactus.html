@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            user-select: none; /* Kijelölés tiltása */
+        }
+        a:hover {
+            color: lightblue; /* Hover hatás */
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+        nav .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1em;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        header {
+            background-color: #0078D7;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        section p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        section form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        section form input,
+        section form textarea,
+        section form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        section form button {
+            background-color: #0078D7;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        section form button:hover {
+            background-color: #005BB5;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="./About_Us_Page.html#aboutus" >Tangle Track</a></div>
+        <ul>
+            <li><a href="./Game_Showcase_Template_With_Navbar.html#home">Home</a></li>
+            <li><a href="./Game_Showcase_Template_With_Navbar.html#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Get in Touch</h1>
+        <p>We'd love to hear from you. Please fill out the form below to contact us.</p>
+    </header>
+    <section id="contact">
+        <h2>Contact Form</h2>
+        <p>Feel free to ask us any questions or leave your feedback!</p>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>© 2024 Game Studio</p>
+    </footer>
+</body>
+</html>
