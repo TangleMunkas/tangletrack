@@ -1,0 +1,46 @@
+# ========== Unity project .gitignore ==========
+
+# OS / Editor junk files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Build results
+*.apk
+*.unitypackage
+Build/
+build/
+
+# Crash logs
+sysinfo.txt
+
+# VS Code
+.vscode/
+
+# Rider
+.idea/
+*.sln.iml
+
+# Rider & JetBrains
+*.dotCover
+*.userprefs
+
+# VS
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Auto-generated VS/MonoDevelop project files
+*.csproj
+*.pidb
+*.unityproj
+*.sln
+
+# Unity cache
+Library/
+Temp/
+Obj/
+Logs/
+MemoryCaptures/
