@@ -1,0 +1,58 @@
+nav button:focus 
+{
+    outline                             : none                  ; /* Kattintás közbeni kijelölés eltüntetése */
+    box-shadow                          : none                  ; /* Kattintási árnyék eltávolítása */
+}
+
+nav button:active
+{
+    outline                             : none                  ; /* Kattintás közbeni kijelölés eltüntetése */
+    box-shadow                          : none                  ; /* Kattintási árnyék eltávolítása */
+}
+
+nav button:hover
+{
+    color                               : white                 ;
+    outline                             : none                  ; /* Kattintás közbeni kijelölés eltüntetése */
+    box-shadow                          : none                  ; /* Kattintási árnyék eltávolítása */
+}
+
+a
+{
+    -webkit-touch-callout               : none                  ; /* Hosszú érintés tiltása iOS-eszközökön */
+    user-select                         : none                  ; /* Szöveg kijelölés tiltása */
+}
+
+menu-button button:focus 
+{
+    outline                             : none                  ; /* Kattintás közbeni kijelölés eltüntetése */
+    box-shadow                          : none                  ; /* Kattintási árnyék eltávolítása */
+}
+
+menu-button button:active
+{
+    outline                             : none                  ; /* Kattintás közbeni kijelölés eltüntetése */
+    box-shadow                          : none                  ; /* Kattintási árnyék eltávolítása */
+}
+
+menu-button button:hover
+{
+    color                               : white                 ;
+    outline                             : none                  ; /* Kattintás közbeni kijelölés eltüntetése */
+    box-shadow                          : none                  ; /* Kattintási árnyék eltávolítása */
+}
+
+.no-highlight a,
+.no-highlight button 
+{
+    -webkit-tap-highlight-color         : transparent           ; /* Mobil érintési kiemelés eltüntetése */
+    outline                             : none                  ; /* Fókusz keret eltüntetése */
+}
+
+.no-highlight li 
+{
+    -webkit-tap-highlight-color         : transparent           ; /* Mobil érintési kiemelés eltüntetése */
+    user-select                         : none                  ; /* Szöveg kijelölés tiltása */
+    list-style                          : none                  ; /* Lista stílus eltüntetése (opcionális) */
+    cursor                              : pointer               ; /* Kattinthatóság mutatása */
+}

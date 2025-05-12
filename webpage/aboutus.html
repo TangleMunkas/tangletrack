@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            user-select: none; /* Kijelölés tiltása */
+        }
+        a:hover {
+            color: lightblue; /* Hover hatás */
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+        nav .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1em;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        header {
+            background-image: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3RvdXdoNXh3dnZ4bHl4OG5kdzZ3bnF4Z3FleXE0ODJ6Mms3YXlnNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3orieWXPZtIf33xV6w/giphy.gif');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0 auto;; 
+            background-color: rgba(51, 51, 51, 0.8);
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        header p {
+            background-color: rgba(51, 51, 51, 0.8);
+            display: block; 
+            padding: 10px 20px;
+            font-size: 1.2em;
+            margin: 0px auto; 
+            border-radius: 50px; 
+        }
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        section p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        section .team {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        section .team-member {
+            max-width: 200px;
+            text-align: center;
+        }
+        section .team-member img {
+            width: 100%;
+            border-radius: 50%;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="#aboutus" >Tangle Track</a></div>
+        <ul>
+            <li><a href="./Game_Showcase_Template_With_Navbar.html#home">Home</a></li>
+            <li><a href="./Game_Showcase_Template_With_Navbar.html#about">About</a></li>
+            <li><a href="./Contact_Us_Page.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>A Csapatunkról</h1>
+        <p>Tudjon meg többet a játék mögött álló emberekről!</p>
+    </header>
+    <section id="aboutus">
+        <h2>Our Story</h2>
+        <p>We are passionate game developers dedicated to creating unique and fun experiences for players all over the world. With years of experience and a commitment to innovation, we strive to deliver games that are engaging, memorable, and accessible to everyone.</p>
+        <div class="team">
+            <div class="team-member">
+                <img src="https://via.placeholder.com/150" alt="Team Member 1">
+                <h3>Konor</h3>
+                <p>Web Developer</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/150" alt="Team Member 2">
+                <h3>Martin</h3>
+                <p>Game Developer</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>© 2024 Game Studio</p>
+    </footer>
+</body>
+</html>

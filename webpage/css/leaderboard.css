@@ -1,0 +1,230 @@
+.minta 
+{
+    display             : flex                              ;
+    align-items         : center                            ;
+    background-color    : #1e90ff                           ;
+    color               : white                             ;
+    padding             : 10px 15px                         ;
+    border-radius       : 15px                              ;
+    width               : 350px                             ;
+    box-shadow          : 3px 3px 10px rgba(0, 0, 0, 0.2)   ;
+    position            : relative                          ;
+    text-align          : left !important                   ;
+    margin              :-5px 0px                           ;
+}
+
+.profile-pic 
+{
+    width               : 50px                              ;
+    height              : 50px                              ;
+    border-radius       : 10px                              ;
+    object-fit          : cover                             ;
+    border              : 3px solid white                   ;
+    
+}
+
+.player-info 
+{
+    margin-left         : 10px                              ;
+    flex-grow           : 1                                 ;
+    display             : flex                              ;
+    align-items         : center                            ;
+    gap                 : 5px                               ;
+    text-align          : left                              ;/* Eltávolítja a középre igazítást */
+    flex-direction      : column                            ;/* Tartalmak egymás alá kerülnek */
+    align-items         : flex-start                        ;/* Balra igazítja a szöveget és a zászlót */
+}
+
+.player-name 
+{
+    font-weight         : bold                              ;
+    font-size           : 16px                              ;
+    align-items         : start                             ;
+    white-space         : nowrap                            ;
+    
+}
+
+.flag 
+{
+    width               : 24px                              ;
+    height              : 16px                              ;
+    margin-top          : 5px                               ;
+}
+        
+.trophy-container 
+{
+    position            : relative                          ;
+    display             : inline-block                      ;
+}
+
+.trophy 
+{
+    width               : 60px                              ;
+    height              : auto                              ;
+}
+        
+.trophy-text 
+{                   
+    position            : absolute                          ;
+    top                 : 50%                               ; /* Középre igazítás */
+    left                : 50%                               ;
+    transform           : translate(-50%, -50%)             ; /* Pontosan a középpontba helyezi */
+    
+    font-size           : 1.2rem                            ;
+    font-weight         : bold                              ;
+    color               : white                             ; /* Fehér szín a kontraszt miatt */
+    text-shadow         : 2px 2px 4px rgba(0, 0, 0, 0.5)    ; /* Kis árnyék az olvashatóság miatt */
+}
+
+.overlay 
+{
+    position            : absolute                          ;
+    top                 : -7px                              ;
+    right               : -7px                              ;
+    width               : 100%                              ;
+    height              : 100%                              ;
+}
+
+.rank-number 
+{
+    position            : absolute;
+    top                 : 30%                               ;
+    left                : 65%                               ;
+    transform           : translate(-50%, -50%)             ;
+    font-size           : 12px                              ;
+    font-weight         : bold                              ;
+    color               : white                             ;
+    text-shadow         : 1px 1px 2px black                 ;
+
+}
+
+.rank-badge 
+{
+    position            : absolute                          ;
+    top                 : -5px                              ;
+    right               : -5px                              ;
+    width               : 35px                              ;
+    height              : 35px                              ;
+}
+        
+.flag-icon 
+{
+    display             : inline-block                      ;
+    width               : 1.8rem                            ; /* Ugyanakkora méret, mint az emoji */
+    height              : 1.8rem                            ;
+    border-radius       : 50%                               ; /* Kör alakú zászló */
+    overflow            : hidden                            ;
+    vertical-align      : middle                            ; /* Igazítás a szöveghez */
+    margin-left         : 0.5rem                            ; /* Kis távolság a szövegtől */
+    background-color    : #ccc                              ; /* Alap háttérszín */
+}
+    
+.flag-icon img 
+{
+    width               : 100%                              ;
+    height              : 100%                              ;
+    object-fit          : cover                             ; /* Kitölti a kör alakú elemet */
+}
+
+.leaderboard-title {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: white;
+}
+.leaderboards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.leaderboard-grid {
+    flex: 1 1 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/* Lapozó középre igazítása */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.leaderboards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.leaderboard-grid {
+    flex: 1 1 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.leaderboards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* !!! KÖZÉPRE HELYEZÉS !!! */
+    gap: 40px;
+    padding: 20px;
+}
+
+/* Lapozó középre igazítása */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+/* Mobilbarát input mező */
+.page-input {
+    width: 60px;
+    text-align: center;
+}
+.leaderboards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* !!! KÖZÉPRE HELYEZÉS !!! */
+    gap: 40px;
+    padding: 20px;
+}
+
+
+/* Mobilnézetre optimalizált elrendezés */
+@media (min-width: 768px) {
+    .leaderboards-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .leaderboard-grid {
+        width: 45%;
+    }
+    
+}
+@media (min-width: 768px) {
+    .leaderboards-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .leaderboard-grid {
+        width: 45%;
+    }
+}
+@media (max-width: 600px) {
+    .leaderboard-grid {
+        max-width: -100%; /* vagy 95%, ha úgy jobban tetszik */
+    }
+}

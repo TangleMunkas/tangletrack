@@ -1,0 +1,142 @@
+#contactus 
+{
+    display                 : flex                          ;
+    justify-content         : center                        ;
+    align-items             : center                        ;
+    padding                 : 50px 20px                     ;
+    background-color        : #1A1A1A                       ;
+}
+
+.container 
+{
+    background-color        : #3C3C3C                       ;
+    border-radius           : 10px                          ;
+    box-shadow              : 0 4px 8px rgba(0, 0, 0, 0.1)  ;
+    padding                 : 30px 40px                     ;
+    max-width               : 500px                         ;
+    width                   : 100%                          ;
+    text-align              : center                        ;
+    font-family             :"Arial", sans-serif            ;
+}
+
+.contactus-h2 
+{
+    font-size               : 24px                          ;
+    color                   : white                         ;
+    margin-bottom           : 10px                          ;
+}
+
+.contactus-hr 
+{
+    border                  : none                          ;
+    border-top              : 1px solid #ddd                ;
+    margin                  : 10px 0 20px                   ;
+}
+
+.form-group
+{
+    margin-bottom           : 20px                          ;
+    text-align              : left                          ;
+    font-family             :"Arial", sans-serif            ;
+}
+
+label 
+{
+    display                 : block                         ;
+    font-size               : 14px                          ;
+    font-weight             : bold                          ;
+    margin-bottom           : 5px                           ;
+    color                   : white                         ;
+}
+
+label span 
+{
+    color                   : #e74c3c                       ; /* Red for asterisk */
+}
+
+input, textarea 
+{
+    width                   : 100%                          ;
+    padding                 : 10px                          ;
+    border                  : 1px solid #ddd                ;
+    border-radius           : 5px                           ;
+    font-size               : 14px                          ;
+    box-sizing              : border-box                    ;
+}
+
+input:focus, textarea:focus 
+{
+    border-color            : #007bff                       ;
+    outline                 : none                          ;
+    box-shadow              : 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+textarea 
+{
+    resize                  : none                          ;
+}
+
+.contactus-button 
+{
+    width                   : 100%                          ;
+    padding                 : 10px                          ;
+    background-color        : #ffc107                       ;
+    border                  : none                          ;
+    border-radius           : 5px                           ;
+    font-size               : 16px                          ;
+    font-weight             : bold                          ;
+    cursor                  : pointer                       ;
+    transition              : background-color 0.3s ease    ;
+    font-family             :"Rowdies", sans-serif          ;
+    text-align              : center                        ;
+    font-size               : 1rem                          ;
+    display                 : inline-block                  ;
+    background-color        : #ffc107                       ;
+    color                   : #000                          ;
+    text-decoration         : none                          ;
+    font-weight             : 400                           ;
+
+}
+
+.contactus-button:hover 
+{
+    background-color        : #e0a800                       ;
+    cursor                  : pointer                       ;
+}
+
+#responseMessage 
+{
+    margin-top              : 10px                          ;
+    padding                 : 10px                          ;
+    border-radius           : 5px                           ;
+    text-align              : center                        ;
+    font-weight             : bold                          ;
+    display                 : none                          ; /* Alapból rejtett */
+}
+.success 
+{
+    background-color        : rgba(0, 255, 0, 0.2)          ; /* Átlátszó zöld */
+    color                   : green                         ;
+}
+.error 
+{
+    background-color        : rgba(255, 0, 0, 0.2)          ; /* Átlátszó piros */
+    color                   : red                           ;
+}
+@media (max-width: 600px) 
+{
+    .contact-form-container 
+    {
+        padding             : 20px 30px                     ;
+    }
+
+    input, textarea 
+    {
+        font-size           : 12px                          ;
+    }
+
+    button 
+    {
+        font-size           : 14px                          ;
+    }
+}

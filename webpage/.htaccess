@@ -1,0 +1,35 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+# Beállítja a főoldalt
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+DirectoryIndex home.php
+
+# Eltávolítja a .html végződést az URL-ből
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# Eltávolítja a .php végződést az URL-ből
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+# Ha nem létező fájl/mappa, akkor átirányít a 404 oldalra
+ErrorDocument 404 /404
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^.*$ /404.php [L]
+
+AddType application/vnd.android.package-archive .apk
+# BEGIN cPanel-generated php ini directives, do not edit
+# Manual editing of this file may result in unexpected behavior.
+# To make changes to this file, use the cPanel MultiPHP INI Editor (Home >> Software >> MultiPHP INI Editor)
+# For more information, read our documentation (https://go.cpanel.net/EA4ModifyINI)
+<IfModule php8_module>
+   php_value date.timezone "Europe/Budapest"
+</IfModule>
+<IfModule lsapi_module>
+   php_value date.timezone "Europe/Budapest"
+</IfModule>
+# END cPanel-generated php ini directives, do not edit
