@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>500 Internal Server Error</title>
+</head>
+<body onload="trackErrors(500)">
+    <h1>500</h1>
+    <p>This service is currently unavailable. Please try again later!</p>
+    <a href="/">Go back</a>
+</body>
+<script src="script.js"></script>
+<style>
+body {
+    -webkit-user-drag: none;
+    user-select:none;
+    padding: 0;
+    padding-top: 15%;
+    margin: 0;
+    background-image: url('/public/resources/rombusz_bg.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-family: 'Varela Round', Sans-serif;
+    text-shadow: 0 30px 10px rgba(#000, .15);
+    text-align: center;
+    z-index: 5;
+}
+
+p {
+  font-size: 35px;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 95px;
+  margin: 0;
+}
+
+a {
+    background-color: rgb(255, 13, 13);
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    font-weight: 600;
+    font-size: 22px;
+    border-radius: 15px;
+    border: 2px solid white;
+    text-decoration: none;
+}
+</style>
+</html>

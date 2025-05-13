@@ -1,22 +1,44 @@
-# Tangle Track – Vizsgaremek (2024-2025)
+# Tangle Track – Vizsgaremek
 
-Ez a repozitórium a szoftverfejlesztő és -tesztelő technikus képzéshez kapcsolódó vizsgaremek projektet tartalmazza.
+Ez a repozitórium a szoftverfejlesztő és -tesztelő technikus képzés keretében készült vizsgaremek projektet tartalmazza.  
+A fejlesztés célja egy teljes, életszerű és működőképes szoftverrendszer megvalósítása volt, amely két fő részből áll:  
+egy Unity-alapú mobiljátékból és a hozzá tartozó webes háttérrendszerből.
 
-A projekt során két különálló, de témában összehangolt fejlesztés készült:
+Kezdés: 2024. szeptember 6.  
+Zárás: 2025. május
 
----------
+---
 
-## 👤 Fejlesztők és tartalom
+## 👤 Fejlesztők
 
-### 📁 `unity_project/` mappa
-- Fejlesztő: Sebestyén Martin
-- Projekt: Unity-alapú mobiljáték PlayFab integrációval
-- Részletes leírás: unity_project/README_UNITY.txt
+- **Sebestyén Martin** – mobiljáték fejlesztés
+- **Szász Konor Milán** – weboldal fejlesztés
 
-### 📁 `webpage/` mappa
-- Fejlesztő: Szász Konor Milán
-- Projekt: Weboldal PlayFab integrációval és admin felülettel
-- Részletes leírás: webpage/README_WEB.txt
+---
 
-## Weboldal elérhetősége
-- https://tangletrack.com
+## 📁 Tartalom
+
+### 📁 `unity_project/`
+- Mobiljáték forráskód
+- Beépített PlayFab integráció
+- Saját pályaszerkesztő Unity Editorhoz
+- 📄 Részletes leírás: `README_UNITY.txt`
+- 📦 APK: https://tangletrack.com/TangleTrack.apk
+
+### 📁 `webpage/`
+- Weboldal forráskód (HTML, CSS, JS, PHP)
+- Ranglista (global & local), kapcsolati űrlap, admin panel
+- Teljesen reszponzív megjelenés
+- 📄 Részletes leírás: `README_WEB.txt`
+- 🌐 Weboldal: https://tangletrack.com
+
+### 📁 `temporary_webpage/`
+- Az ideiglenes oldal, amely a fő domainen volt elérhető,
+  amíg a végleges weboldal a `test.tangletrack.com` címen készült
+
+---
+
+### 📄 `TangleTrack_Dokumentacio.pdf`
+A projekt teljes fejlesztői és felhasználói dokumentációja –  
+beleértve a játék, a weboldal, a rendszerstruktúra, a tesztelés és a jövőbeli tervek részletes bemutatását.  
+A dokumentáció automatikusan generált tartalomjegyzéket is tartalmaz.

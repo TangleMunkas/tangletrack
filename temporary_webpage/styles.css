@@ -1,0 +1,108 @@
+body {
+    -webkit-user-drag: none;
+    user-select:none;
+    padding: 0;
+    margin: 0;
+    background-image: url('/public/resources/rombusz_bg.png');
+}
+
+iframe {
+    user-select: none;
+}
+
+h1 {
+    color: white;
+    font-weight: 900;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+h2 {
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.try-game-button {
+    background-color: rgb(255, 13, 13);
+    color: rgb(255, 255, 255);
+    padding: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    border-radius: 20px;
+    border: 5px solid white;
+    text-decoration: none;
+}
+
+.kozossegi-linkek-div {
+    display: flex;
+    justify-content: center;
+}
+
+.kozossegi_logo {
+    width: 100px;
+    height: 100px;
+    user-select: none;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+.kozossegi_logo:hover {
+    width: 100px;
+    height: 100px;
+    user-select: none;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+#tipus_a {
+    animation-name: lebeges-kicsi_a;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#tipus_b {
+    animation-name: lebeges-kicsi_b;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+iframe {
+    border: 10px solid #02386e;
+    width: 700px;
+    height: 525px;
+    margin-bottom: 100px;
+}
+
+.lebego-nagy {
+    /*animation-name: lebeges-nagy;*/
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+}
+
+@keyframes lebeges-nagy {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 25px); }
+    100%   { transform: translate(0, 0px); }    
+}
+
+@keyframes lebeges-kicsi_a {
+    0% { transform: translate(0,  0px); }
+    33%  { transform: translate(0, 10px); }
+    /*50%  { transform: translate(0, 0px); }*/
+    66%  { transform: translate(0, -10px); }
+    100%   { transform: translate(0, 0px); }    
+}
+
+@keyframes lebeges-kicsi_b {
+    0% { transform: translate(0,  0px); }
+    33%  { transform: translate(0, -10px); }
+    /*50%  { transform: translate(0, 0px); }*/
+    66%  { transform: translate(0, 10px); }
+    100%   { transform: translate(0, 0px); }    
+}
